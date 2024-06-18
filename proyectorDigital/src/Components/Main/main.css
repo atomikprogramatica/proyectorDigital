@@ -1,0 +1,79 @@
+/* Estilos del primer bloque del Main */
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px 0 10px;
+}
+
+.main-box > div {
+    padding: 0 0 0 140px;
+}
+
+.main-box > div > h1 {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 80px;
+    text-align: start;
+    line-height: 0.9;
+}
+
+.main-box > div > h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 33px;
+    text-align: start;
+    color: #913EF5;
+    line-height: 1.5;
+}
+
+.main-box > img {
+    width: 45%;
+    padding: 0 60px 0 0;
+}
+
+/* Estilos del segundo bloque del Main */
+
+.acces-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 140px;
+}
+
+.acces-box > span {
+    background-color: #fff;
+    width: 190px;
+    height: 2px;
+}
+
+.redirect-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.redirect-box {
+    text-decoration: none;
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.redirect-box svg {
+    transition: transform 0.3s ease;
+    opacity: 0.4;
+}
+
+.redirect-box:hover svg {
+    transform: translateX(10px);
+    opacity: 1;
+}
