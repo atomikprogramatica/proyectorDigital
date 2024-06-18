@@ -2,6 +2,7 @@
   "name": "proyectordigital",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://atomikprogramatica.github.io/proyectorDigital/",
   "type": "module",
   "scripts": {
     "dev": "vite",
