@@ -3,7 +3,7 @@
 * { margin: 0; padding: 0; }
 *, *::before, *::after { box-sizing: border-box; }
 
-body { min-height: 100dvh;  background-color: #191919 ;}
+body { min-height: 100dvh;  background-color: #191919 ;  overflow: hidden}
 input, button, textarea, select { font: inherit; }
 
 p { text-wrap: pretty; }

@@ -1,0 +1,40 @@
+/* Estilos del icono de scroll */
+
+.linea-container {
+    position: absolute;
+    top: 0;
+    left: 88%;
+    color: #989797;
+    transform: translateY(1080%);
+}
+
+/* Estilos de la linea lateral */
+.linea-scroll {
+    background-color: transparent; 
+}
+  
+.linea-scroll::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translateX(-16%);
+  width: 800px; /* Diámetro del medio círculo */
+  height: 900px; /* Diámetro del medio círculo */
+  border: 4px solid #913EF5; /* Color y grosor de la línea */
+  border-color: transparent transparent #913EF5 #913EF5; /* Colores del borde para hacer el cuarto de círculo */
+  border-radius: 50%; /* Radio de borde para hacer un círculo */
+}
+
+/* Estilos del redondel */ 
+
+.redondel-scroll{
+  position: absolute;
+  top: 50%; /* Centra el círculo verticalmente */
+  left: 92%; /* Centra el círculo horizontalmente */
+  transform: translate(-60%, 300%); /* Ajusta el posicionamiento */
+  width: 25px; /* Ancho del círculo pequeño */
+  height: 25px; /* Altura del círculo pequeño */
+  background-color: #913EF5; /* Color del círculo */
+  border-radius: 50%; /* Hace que el span sea un círculo */
+}

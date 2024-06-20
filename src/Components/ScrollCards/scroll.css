@@ -13,6 +13,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .section-container:hover img {
+    filter: blur(5px);
+  }
+  
   
   .section {
     position: absolute;
@@ -42,6 +47,35 @@
   .section.previous {
     transform: translateY(100%) translate(-50%, -50%) rotateZ(45deg) translateY(-300%) rotateZ(80deg);
   }
+
+  /* Evaluar bloque de codigo */ 
+
+  
+.section.with-break h1 {
+  line-height: 0.8;
+  color: #ffffff;
+  font-size: 96px;
+  position: absolute;
+  top: -70px;
+  left: 10px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.section.without-break h1 {
+  position: absolute;
+  margin: 0;
+  line-height: 1.2;
+  color: #ffffff;
+  font-size: 96px;
+  top: -40px;
+  left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  z-index: 2;
+}
   
   .section h1 {
     position: absolute;
@@ -73,3 +107,51 @@
     font-weight: 900;
     z-index: 2;
   }
+
+/* Estilos de las tarjetas neón */
+
+.neon-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 662px;
+  height: 382px;
+}
+
+.neon-card img {
+  position: relative;
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.neon-card:before,
+.neon-card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 45px;
+  z-index: -1;
+}
+
+.neon-card:after {
+  filter: blur(15px);
+}
+
+.neon-card:nth-child(1):before,
+.neon-card:nth-child(1):after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.neon-card:nth-child(2):before,
+.neon-card:nth-child(2):after {
+  background: linear-gradient(235deg, #fbfbfb, #010615, #ffffff);
+}
+
+.neon-card:nth-child(3):before,
+.neon-card:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}

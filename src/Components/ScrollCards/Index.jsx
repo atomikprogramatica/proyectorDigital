@@ -33,7 +33,7 @@ const ScrollCards = () => {
         {sections.map((section, index) => (
           <div
             key={section.id}
-            className={`section ${index === currentSection ? 'visible' : index === (currentSection + 1) % sections.length ? 'next' : index === (currentSection - 1 + sections.length) % sections.length ? 'previous' : ''}`}
+            className={`section ${section.className} ${index === currentSection ? 'visible' : index === (currentSection + 1) % sections.length ? 'next' : index === (currentSection - 1 + sections.length) % sections.length ? 'previous' : ''}`}
           >
             <h1>
               {section.title.includes('<br />') ? (
@@ -47,8 +47,10 @@ const ScrollCards = () => {
                 section.title
               )}
             </h1>
-            <img src={section.imageUrl} alt={section.title} className="section-image" />
-            <p>{`${index + 1}/${sections.length}`}</p>
+            <div className='neon-card'>
+              <img src={section.imageUrl} alt={section.title} className="section-image" />
+              <p>{`${index + 1}/${sections.length}`}</p>
+            </div>
           </div>
         ))}
       </div>

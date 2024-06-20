@@ -5,6 +5,7 @@
     align-items: center;
     text-align: center;
     margin: 10px 10px 0 10px;
+    z-index: 1;
 }
 
 .main-box > div {
@@ -25,7 +26,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 33px;
+    font-size: 30px;
     text-align: start;
     color: #913EF5;
     line-height: 1.5;
@@ -34,6 +35,8 @@
 .main-box > img {
     width: 45%;
     padding: 0 60px 0 0;
+    margin: 50px 100px 0 0;
+    background: transparent;
 }
 
 /* Estilos del segundo bloque del Main */
@@ -41,7 +44,7 @@
 .acces-box {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0 0 0 10px;
     padding: 0 0 0 140px;
 }
