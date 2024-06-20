@@ -3,8 +3,7 @@ import logotipo from '../../assets/logo-animacion-blanco.gif';
 import './header.css';
 
 const Header = () => {
-
-  const [menuOpen, setMenuOpen ] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -30,26 +29,28 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <div>
-        <nav className='header-box'>
-              <a href='/'>
-                <img src={logotipo} alt="Logotipo Header"/>
-              </a>
-            <div>
-                <a href="">INSTRUCTIVO</a>
-                <a href="">SPECS</a>
-                <a href="">CONTACTO</a>
-                <div onClick={toggleMenu}>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-            </div>
-        </nav>
-        <div className={`menu ${menuOpen ? 'open' : ''}`} ref={menuRef}>
+    <div className='header'>
+      <nav className='header-box'>
+        <a href='/'>
+          <img src={logotipo} alt="Logotipo Header" />
+        </a>
+        <div>
+          <a href="">INSTRUCTIVO</a>
+          <a href="">SPECS</a>
+          <a href="">CONTACTO</a>
+          <div onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+      <div className={`menu ${menuOpen ? 'open' : ''}`} ref={menuRef}>
         <div className="menu-content">
           <div>
-            <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M20 20L4 4m16 0L4 20"/></svg>
+            <svg onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M20 20L4 4m16 0L4 20"/>
+            </svg>
           </div>
           <h2 className="menu-subtitle">Tradicionales</h2>
           <p className="menu-item">Banners Display</p>
@@ -76,7 +77,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Header;
