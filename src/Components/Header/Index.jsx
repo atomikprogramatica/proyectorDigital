@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import logotipo from '../../assets/logo-animacion-blanco.gif';
 import './header.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,9 +32,9 @@ const Header = () => {
   return (
     <div className='header'>
       <nav className='header-box'>
-        <a href='/'>
+        <NavLink to='../proyectorDigital' className='navLinkHeader'>
           <img src={logotipo} alt="Logotipo Header" />
-        </a>
+        </NavLink>
         <div>
           <a href="">INSTRUCTIVO</a>
           <a href="">SPECS</a>
