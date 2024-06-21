@@ -38,7 +38,7 @@ const Header = () => {
         <div>
           <a href="">INSTRUCTIVO</a>
           <a href="">SPECS</a>
-          <a href="">CONTACTO</a>
+          <NavLink to="/proyectorDigital/contacto">CONTACTO</NavLink>
           <div onClick={toggleMenu}>
             <span></span>
             <span></span>
