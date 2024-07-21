@@ -88,7 +88,7 @@
 
 .content-container {
   position: relative;
-  z-index: 1; /* Asegura que el contenido esté delante del fondo aurora */
+  z-index: 0; /* Asegura que el contenido esté delante del fondo aurora */
   width: 100%;
   height: 100%;
 }

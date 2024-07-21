@@ -6,7 +6,6 @@ import ScrollCards from '../ScrollCards/Index'
 const SeccionFormatos = () => {
   return (
     <div>
-        <Linea />
         <Aurora />
         <Header />
         <ScrollCards />
