@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../Tradicionales/tradicionales.css";
 import Aurora from "../Aurora/Index.jsx";
 import Header from "../Header/Index.jsx";

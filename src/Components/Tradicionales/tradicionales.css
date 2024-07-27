@@ -45,7 +45,7 @@ body {
 .tradicional-header p {
     font-size: 1em;
     line-height: 1.2;
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .tradicionales-container {
@@ -115,6 +115,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
@@ -142,7 +143,7 @@ body {
 /* Mobile Styles */
 .mockup-container.mobile {
     width: 25%;
-    height: 500px;
+    height: 300px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
@@ -157,8 +158,8 @@ body {
 }
 
 .mockup-content.mobile > img {
-    width: 75%;
-    height: 2000px;
+    width: 45%;
+    height: 720px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -40%);
@@ -177,6 +178,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    bottom: 100px;
 }
 
 .mockup-content.desktop {
@@ -200,17 +202,18 @@ body {
 
   .mockup-container.mobile.format4 {
     width: 20%;
-    height: 500px;
+    height: 300px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
 }
 
 .mockup-content.mobile.format4 {
-    width: 100%;
+    width: 65%;
     height: auto;
     position: relative;
-    top: 6%;
+    top: 2%;
+    left: 42px;
   }
 
 
@@ -223,17 +226,18 @@ body {
 
 .mockup-container.mobile.format5 {
     width: 20%;
-    height: 500px;
+    height: 305px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
 }
 
 .mockup-content.mobile.format5 {
-    width: 100%;
+    width: 65%;
     height: auto;
     position: relative;
-    top: 6%;
+    top: 3%;
+    left: 42px;
 }
 
 
@@ -241,30 +245,31 @@ body {
     width: 88%;
     height: auto;
     position: relative;
+    border-radius: 12px;
     transform: translate(-50%, 0);
 }
 
 .mockup-container.mobile.format6 {
     width: 20%;
-    height: 600px;
+    height: 430px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
 }
 
 .mockup-content.mobile.format6 {
-    width: 100%;
+    width: 83%;
     height: auto;
     position: relative;
-    top: 6%;
+    left: 20px;
 }
 
 .mockup-content.mobile.format6 > img {
     position: relative;
     transform: translate(-50%, 0);
-    width: 90%;
-    height: 437px;
-    margin-top: 46px;
+    width: 95%;
+    height: 405px;
+    border-radius: 12px;
 }
 
 /* Media queries para pantallas medianas */
