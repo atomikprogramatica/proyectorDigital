@@ -121,6 +121,12 @@
   font-size: 20px;
 }
 
+.menu-content > a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .menu-item {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;

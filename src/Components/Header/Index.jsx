@@ -54,27 +54,27 @@ const Header = () => {
             </svg>
           </div>
           <h2 className="menu-subtitle">Tradicionales</h2>
-          <p className="menu-item">Banners Display</p>
-          <p className="menu-item">DCO</p>
-          <p className="menu-item">Native</p>
-          <p className="menu-item">Video Programático</p>
-          <p className="menu-item">TikTok</p>
-          <p className="menu-item">Youtube Video</p>
-          <h2 className="menu-subtitle">Rich Media</h2>
-          <h2 className="menu-subtitle">Social +</h2>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">Banners Display</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">DCO</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">Native</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">Video Programático</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">TikTok</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/tradicionales"><p className="menu-item">Youtube Video</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/rich-media"><h2 className="menu-subtitle">Rich Media</h2></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/social"><h2 className="menu-subtitle">Social +</h2></NavLink>
           <h2 className="menu-subtitle">Gaming</h2>
-          <p className="menu-item">Display Gaming</p>
-          <p className="menu-item">Display In-Game</p>
-          <p className="menu-item">Audio In-Game</p>
-          <p className="menu-item">GamingAd (Rich Media)</p>
-          <p className="menu-item">Video Rewarded</p>
+          <NavLink to="/proyectorDigital/ver-formatos/gaming"><p className="menu-item">Display Gaming</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/gaming"><p className="menu-item">Display In-Game</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/gaming"><p className="menu-item">Audio In-Game</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/gaming"><p className="menu-item">GamingAd (Rich Media)</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/gaming"><p className="menu-item">Video Rewarded</p></NavLink>
           <h2 className="menu-subtitle">Video+</h2>
-          <p className="menu-item">4k Streaming</p>
-          <p className="menu-item">Interactive</p>
-          <p className="menu-item">InFrame</p>
-          <h2 className="menu-subtitle">Audio Ad</h2>
-          <h2 className="menu-subtitle">Notification Push</h2>
-          <h2 className="menu-subtitle">CTV</h2>
+          <NavLink to="/proyectorDigital/ver-formatos/video"><p className="menu-item">4k Streaming</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/video"><p className="menu-item">Interactive</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/video"><p className="menu-item">InFrame</p></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/audio"><h2 className="menu-subtitle">Audio Ad</h2></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/notification-push"><h2 className="menu-subtitle">Notification Push</h2></NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos/ctv"><h2 className="menu-subtitle">CTV</h2></NavLink>
         </div>
       </div>
     </div>
