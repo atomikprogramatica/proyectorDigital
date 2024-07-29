@@ -1,11 +1,8 @@
-
-
 .mockup-container-notification {
     width: 25%;
     height: 550px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
-    position: relative;
 }
 
 .mockup-content-notification {
@@ -13,6 +10,7 @@
     height: 95%;
     position: relative;
     top: 40%;
+    margin-bottom: 25px;
 }
 
 .mockup-content-notification > img {
@@ -69,7 +67,7 @@
 
 
 /* Media queries para pantallas pequeñas */
-@media (max-width: 2560px) and (max-height: 1140px) {
+@media (max-width: 2560px) and (max-height: 1440px) {
     .mockup-container-notification {
         top: 100px;
     }    
@@ -91,6 +89,7 @@
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
+    bottom: 15%;
 }
 
 .mockup-content-notification {

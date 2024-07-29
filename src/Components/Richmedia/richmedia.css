@@ -100,6 +100,7 @@ body {
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
+    bottom: 15%;
 }
 
 .mockup-content-rm.mobile {
@@ -152,7 +153,7 @@ body {
 
 
 /* Media queries para pantallas pequeñas */
-@media (max-width: 2560px) and (max-height: 1140px) {
+@media (max-width: 2560px) and (max-height: 1440px) {
     .mockup-container-rm.desktop {
         top: 80px;
     }
@@ -165,7 +166,7 @@ body {
 /* Media queries para pantallas medianas */
 @media (max-width: 1920px) and (max-height: 1080px) {
     .mockup-container-rm.desktop {
-        top: 80px;
+        top: 30px;
     }
 
     .mockup-container-rm.mobile {
@@ -175,13 +176,13 @@ body {
 }
 
 /* Media queries para pantallas muy pequeñas */
-@media (max-width: 1367px) and (max-height: 768px) {
+@media (max-width: 1366px) and (max-height: 768px) {
     .mockup-container-rm.desktop {
         top: 0;
     }
 
     .mockup-container-rm.mobile {
-        margin-top: 2%;
+        margin-top: 7%;
         height: 400px;
     }
 
