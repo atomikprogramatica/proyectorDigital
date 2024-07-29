@@ -9,9 +9,9 @@ export default defineConfig({
         target: 'https://api.resend.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
-      }
-    }
+      },
+    },
   },
   plugins: [react()],
-  base: './',
+   base: './',
 })

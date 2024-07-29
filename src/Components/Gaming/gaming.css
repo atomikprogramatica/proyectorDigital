@@ -115,7 +115,7 @@ body {
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
-    top: 10%;
+    top: 25%;
 }
 
 .mockup-content-gaming.mobile {
@@ -140,7 +140,7 @@ body {
     position: relative;
     transform: rotate(90deg); /* Rotar el contenedor */
     transform-origin: center; /* Asegurar que la rotación sea desde el centro */
-    top: 3%;
+    top: 25%;
 }
 
 
@@ -180,6 +180,4 @@ body {
         margin-top: 3%;
         border-radius: 12px;
     }
-
-
 }
