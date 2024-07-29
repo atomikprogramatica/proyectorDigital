@@ -13,5 +13,5 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: "https://atomikprogramatica.github.io/proyectorDigital",
+  base: './',
 })
