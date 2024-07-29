@@ -29,6 +29,7 @@ const Header = () => {
     };
   }, [menuOpen]);
 
+
   return (
     <div className='header'>
       <nav className='header-box'>
@@ -36,8 +37,8 @@ const Header = () => {
           <img src={logotipo} alt="Logotipo Header" />
         </NavLink>
         <div>
-          <a href="">INSTRUCTIVO</a>
-          <a href="">SPECS</a>
+          <NavLink to="/proyectorDigital">INSTRUCTIVO</NavLink>
+          <NavLink to="/proyectorDigital/ver-formatos">SPECS</NavLink>
           <NavLink to="/proyectorDigital/contacto">CONTACTO</NavLink>
           <div onClick={toggleMenu}>
             <span></span>

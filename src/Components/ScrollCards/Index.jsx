@@ -33,8 +33,19 @@ function SeccionFormatos() {
     navigate(path);
   };
 
+  const goToNextSection = () => {
+    const newNextSection = (currentSection + 1) % sections.length;
+    setCurrentSection(newNextSection);
+  };
+
+  const goToPreviousSection = () => {
+    const newPreviousSection = (currentSection - 1 + sections.length) % sections.length;
+    setCurrentSection(newPreviousSection);
+  };
+
   return (
     <div className="App" onWheel={handleScroll}>
+      <div className="arrow up" onClick={goToPreviousSection}>&uarr;</div>
       <div className="section-container">
         {sections.map((section, index) => (
           <div
@@ -70,6 +81,7 @@ function SeccionFormatos() {
           </div>
         ))}
       </div>
+      <div className="arrow down" onClick={goToNextSection}>&darr;</div>
     </div>
   );
 }

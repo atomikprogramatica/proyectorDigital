@@ -36,6 +36,9 @@
     padding: 0 60px 0 0;
     margin: 50px 100px 0 0;
     background: transparent;
+    position: relative;
+    top: 30px;
+    left: 45px;
 }
 
 /* Estilos del segundo bloque del Main */

@@ -100,6 +100,7 @@ body {
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
+    bottom: 15%;
 }
 
 .mockup-content-rm.mobile {
