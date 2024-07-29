@@ -241,9 +241,9 @@
     left: 0;
   }
   
-.arrow:hover:before, .arrow:hover:after {
-    background: linear-gradient(360deg, #b00dbc, #d3d4d8, #e0d1e2);
-    opacity: 0.2;
+.arrow:hover, .arrow:hover {
+    font-size: 4.2rem;
+    padding-top: 0.5%;
 } 
 
 .arrow:active {
