@@ -358,11 +358,11 @@ body {
     .mockup-container.desktop {
         width: 54%;
         height: 450px;
-        top: 80px;
+        top: 10%;
     }
 
     .mockup-content.desktop {
-        width: 100%;
+        width: 83%;
         height: 69%;
     }
 
@@ -373,7 +373,7 @@ body {
     .mockup-container.mobile {
         width: 35%;
         height: 500px;
-        margin-top: 8%;
+        top: -15%;
     }
 
     .mockup-content.mobile {
@@ -432,6 +432,29 @@ body {
     .mockup-content.mobile.format5 > img {
         width: 91%;
         height: auto;
+        position: relative;
+        transform: translate(-50%, 0);
+      }
+
+    .mockup-container.mobile.format6 {
+        width: 20%;
+        height: 500px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+    }
+    
+    .mockup-content.mobile.format6 {
+        width: 95%;
+        height: auto;
+        position: relative;
+        left: 5px;
+        top: 30px;
+      }
+    
+    
+    .mockup-content.mobile.format6 > img {
+        width: 91%;
+        height: 450px;
         position: relative;
         transform: translate(-50%, 0);
       }

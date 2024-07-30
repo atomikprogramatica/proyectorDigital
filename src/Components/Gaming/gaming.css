@@ -183,3 +183,30 @@ body {
 
 
 }
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+
+    .mockup-container-gaming.mobile {
+        top: 15%;
+        height: 450px;
+    }
+
+    .mockup-content-gaming.mobile {
+        width: 79%;
+        height: 100%;
+
+    }
+    
+    .mockup-content-gaming.mobile > img {
+        width: 82%;
+        height: 93.5%;
+        margin-left: 16%;
+        margin-top: 3%;
+        border-radius: 12px;
+    }
+
+    .mockup-container-gaming.mobile.format2 {
+        top: 1%;
+    }
+
+}

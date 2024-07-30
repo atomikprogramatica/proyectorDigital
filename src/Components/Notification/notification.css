@@ -75,7 +75,30 @@
 
 /* Media queries para pantallas medianas */
 @media (max-width: 1920px) and (max-height: 1080px) {
-
+    .mockup-container-notification {
+        width: 25%;
+        height: 450px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        margin-top: 5%;
+    }
+    
+    .mockup-content-notification {
+        width: 80%;
+        height: 95%;
+        position: relative;
+        top: 40%;
+        margin-bottom: 25px;
+        left: 10%;
+    }
+    
+    .mockup-content-notification > img {
+        width: 85%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
 
 }
 
