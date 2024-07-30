@@ -82,16 +82,3 @@
     transform: translateX(10px);
     opacity: 1;
 }
-
-/* Media queries para pantallas pequeñas */
-@media (max-width: 2560px) and (max-height: 1440px) {
-    .acces-box {
-        margin-left: 7%;
-        margin-top: -10%;
-    }
-
-    .main-box img {
-        left: 5%;
-        margin-top: 5%;
-    }
-}
