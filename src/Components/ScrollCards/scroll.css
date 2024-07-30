@@ -199,7 +199,6 @@
     align-items: center;
     justify-items: left; /* Alinear elementos a la izquierda */
 }
-
 .arrow {
     position: absolute;
     left: 50%;

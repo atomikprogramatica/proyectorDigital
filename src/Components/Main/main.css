@@ -82,6 +82,7 @@
     transform: translateX(10px);
     opacity: 1;
 }
+<<<<<<< HEAD
 
 /* Media queries para pantallas pequeñas */
 @media (max-width: 2560px) and (max-height: 1440px) {
@@ -107,3 +108,5 @@
         margin-top: 5%;
     }
 }
+=======
+>>>>>>> 23ebc449d089a24d2fe5d4d41a5b6b1d4c001236

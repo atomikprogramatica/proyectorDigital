@@ -50,12 +50,11 @@ body {
 
 
 .mockup-container-audio.mobile {
-    width: 35%;
-    height: 655px;
+    width: 25%;
+    height: 500px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
-    top: 20%;
 }
 
 .mockup-content-audio.mobile {
@@ -67,7 +66,7 @@ body {
 }
 
 .mockup-content-audio.mobile > img {
-    width: 70%;
+    width: 75%;
     height: 2000px;
     position: absolute;
     left: 50%;

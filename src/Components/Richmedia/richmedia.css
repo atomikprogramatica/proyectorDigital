@@ -95,12 +95,12 @@ body {
 
 /* Mobile Styles */
 .mockup-container-rm.mobile {
-    width: 35%;
-    height: 700px;
+    width: 25%;
+    height: 550px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
     position: relative;
-    top: 2%;
+    bottom: 15%;
 }
 
 .mockup-content-rm.mobile {
@@ -111,7 +111,7 @@ body {
 }
 
 .mockup-content-rm.mobile > img {
-    width: 86%;
+    width: 85%;
     height: 100%;
     position: absolute;
     left: 50%;
@@ -122,8 +122,8 @@ body {
 /* Desktop Styles */
 
 .mockup-container-rm.desktop {
-    width: 70%;
-    height: 650px;
+    width: 50%;
+    height: 500px;
     background: url('../../mockup_Desktop.png') no-repeat center center;
     background-size: contain;
     display: flex;
@@ -133,16 +133,16 @@ body {
 }
 
 .mockup-content-rm.desktop {
-    width: 74%;
-    height: 500px;
+    width: 75%;
+    height: 60%;
     position: relative;
     overflow-y: scroll;
     bottom: 4%;
 }
 
 .mockup-content-rm.desktop > img {
-    width: 100%;
-    height: 80%;
+    max-width: 100%;
+    max-height: 1200px;
     position: absolute;
     top: 50%;
     left: 50%;
