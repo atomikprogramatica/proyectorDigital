@@ -215,8 +215,8 @@ const Video = () => {
           ))}
         </div>
 
-        <div className={`mockup-container ${selectedDevice} ${selectedFormat}`}>
-          <div className={`mockup-content ${selectedDevice} ${selectedFormat}`}>
+        <div className={`mockup-container-vid ${selectedDevice}`}>
+          <div className={`mockup-content-vid ${selectedDevice}`}>
             <img
               src={
                 formatsData[selectedFormat].filters[selectedDevice][
