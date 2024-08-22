@@ -175,3 +175,12 @@
     background-color: #ffffff;
     cursor: pointer;
 }
+
+@media (min-width: 3800px) and (min-height: 2100px){
+    .main-contact-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+        margin-top: 10%;
+    }
+}

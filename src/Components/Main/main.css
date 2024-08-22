@@ -84,6 +84,18 @@
 }
 
 /* Media queries para pantallas pequeñas */
+@media (max-width: 3840px) and (max-height: 2160px) {
+    .acces-box {
+        margin-left: 14%;
+        margin-top: -10%;
+    }
+
+    .main-box img {
+        left: 10%;
+        margin-top: 8%;
+    }
+}
+
 @media (max-width: 2560px) and (max-height: 1440px) {
     .acces-box {
         margin-left: 7%;

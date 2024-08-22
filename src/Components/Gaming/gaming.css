@@ -159,6 +159,28 @@ body {
 }
 
 
+@media only screen and (max-width: 3840px) and (max-height:2160px) {
+    .mockup-container-gaming.mobile {
+        width: 25%;
+        height: 550px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        top: 125%;
+    }
+}
+
+@media only screen and (max-width: 2560px) and (max-height:1440px) {
+    .mockup-container-gaming.mobile {
+        width: 25%;
+        height: 550px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        top: 35%;
+    }
+}
+
 @media only screen and (max-width: 1920px) and (max-height:1080px) {
     .mockup-container-gaming.mobile {
         width: 25%;
@@ -232,6 +254,58 @@ body {
         width: 95%;
         height: 99%;
         margin-left: 18%;
+        border-radius: 12px;
+    }
+    
+    .mockup-container-gaming.mobile.format2 {
+        width: 350px;
+        height: 350px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        transform: rotate(90deg); /* Rotar el contenedor */
+        transform-origin: center; /* Asegurar que la rotación sea desde el centro */
+        top: 5%;
+    }
+    
+    
+    .mockup-content-gaming.mobile.format2 {
+        width: 95%;
+        height: 100%;
+        transform: rotate(-90deg); /* Rotar el contenido en la dirección opuesta para que quede horizontal */
+        transform-origin: center; /* Asegurar que la rotación sea desde el centro */
+    }
+    
+    .mockup-content-gaming.mobile.format2 > img {
+        width: 99.5%;
+        height: 45%;
+        margin-top: 26%;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 1800px) and (max-height:850px) {
+    .mockup-container-gaming.mobile {
+        width: 20%;
+        height: 250px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        top: 10%;
+    }
+    
+    .mockup-content-gaming.mobile {
+        width: 50%;
+        height: 99%;
+        margin: 5% 10% 10% 5%;
+        bottom: 15px;
+        position: relative;
+    }
+    
+    .mockup-content-gaming.mobile > img {
+        width: 95%;
+        height: 99%;
+        margin-left: 42%;
         border-radius: 12px;
     }
     

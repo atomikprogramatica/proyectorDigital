@@ -109,8 +109,18 @@ body {
 }
 
 
-
 /* Media queries para pantallas pequeñas */
+@media (max-width: 3840px) and (max-height: 2160px) {
+
+    .mockup-container-audio.desktop {
+        top: 115%;
+    }
+    .mockup-container-audio.mobile {
+        top: 135%;
+    }
+     
+}
+
 @media (max-width: 2560px) and (max-height: 1440px) {
 
     .mockup-container-audio.desktop {
@@ -223,3 +233,64 @@ body {
 }
 }
 
+@media (max-width: 1800px) and (max-height: 850px) {
+
+    .tradicional-header-aud p {
+        max-width: 80%;
+    }
+        
+    .mockup-container-audio.mobile {
+        width: 25%;
+        height: 350px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        top: -5%;
+    }
+    
+    .mockup-content-audio.mobile {
+        width: 76%;
+        height: 94%;
+        position: relative;
+        overflow-y: scroll;
+        top: 3%;
+    }
+    
+    .mockup-content-audio.mobile > img {
+        width: 80%;
+        height: 1000px;
+        position: absolute;
+        transform: translate(-25%, -37%);
+    }
+    
+    /* Desktop Styles */
+    
+    .mockup-container-audio.desktop {
+        width: 35%;
+        height: 350px;
+        background: url('../../mockup_Desktop.png') no-repeat center center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .mockup-content-audio.desktop {
+        width: 75%;
+        height: 60%;
+        position: relative;
+        overflow-y: scroll;
+        bottom: 4%;
+    }
+    
+    .mockup-content-audio.desktop > img {
+        max-width: 100%;
+        max-height: 1200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+}
