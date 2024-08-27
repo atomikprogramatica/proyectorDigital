@@ -21,10 +21,6 @@ const MainContact = () => {
         mensaje: '',
     })
 
-
-    // ESTA LOGICA ES CON LA BIBLIOTECA RESEND
-    const API_KEY = import.meta.env.VITE_RESEND_API_KEY
-
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -36,36 +32,26 @@ const MainContact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const { nombre, apellido, pais, mensaje } = formData;
-        const htmlContent = `
-            <strong>Solicitud desde Proyector Digital recibida</strong> <br />
-            <strong>Nombre:</strong> ${nombre} <br/>
-            <strong>Apellido:</strong> ${apellido} <br/>
-            <strong>País:</strong> ${pais} <br/>
-            <strong>Mensaje:</strong> ${mensaje} <br />
-            <p> Recuerda ponerte en contacto para aprovechar esta oportunidad! </p>
-        `;
-
         try {
-            const response = await fetch('/api/emails', {
+            const formEle = document.querySelector("form");
+            const dataBase = new FormData(formEle);
+
+            const url = import.meta.env.MODE === 'production'
+            ? import.meta.env.VITE_GOOGLE_SCRIPT_URL
+            : '/api';
+            const response = await fetch(url, {
                 method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${API_KEY}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    from: 'Proyector Digital <onboarding@resend.dev>',
-                    to: ['andy@atomik.pro'],
-                    subject: 'Consulta desde formulario',
-                    html: htmlContent
-                })
+                body: dataBase
             });
-    
-            const data = await response.json();
-            if (!response.ok) {
-                console.error(data);
+            if (response.ok) {
+                setFormData({
+                    nombre: '',
+                    apellido: '',
+                    pais: '',
+                    mensaje: '',
+                });
             } else {
-                console.log(data);
+                throw new Error('Error al enviar los datos');
             }
         } catch (error) {
             console.error('Error:', error);
@@ -90,6 +76,7 @@ const MainContact = () => {
                     <input 
                     type='text'
                     name='nombre'
+                    id='nombre'
                     value={formData.nombre}
                     onChange={handleInputChange}
                     placeholder='Maria' 
@@ -100,6 +87,7 @@ const MainContact = () => {
                     <input 
                     type='text'
                     name='apellido'
+                    id='apellido'
                     value={formData.apellido}
                     onChange={handleInputChange}
                     placeholder='Pérez' 
@@ -112,6 +100,7 @@ const MainContact = () => {
                     <input 
                     type='text'
                     name='pais'
+                    id='pais'
                     value={formData.pais}
                     onChange={handleInputChange}
                     placeholder='Uruguay' 
@@ -124,6 +113,7 @@ const MainContact = () => {
                     <textarea 
                     type='text'
                     name='mensaje'
+                    id='mensaje'
                     value={formData.mensaje}
                     onChange={handleInputChange}
                     placeholder='Buen día, me comunicaba para consultar sobre...' 

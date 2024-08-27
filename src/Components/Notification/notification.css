@@ -67,24 +67,56 @@
 
 
 /* Media queries para pantallas pequeñas */
+@media (max-width: 3840px) and (max-height: 2160px) {
+    .mockup-container-notification {
+        top: 125%;
+        position: relative;
+    }    
+}
+
+
 @media (max-width: 2560px) and (max-height: 1440px) {
     .mockup-container-notification {
-        top: 100px;
+        top: 25%;
+        position: relative;
     }    
 }
 
 /* Media queries para pantallas medianas */
 @media (max-width: 1920px) and (max-height: 1080px) {
-
+    .mockup-container-notification {
+        width: 25%;
+        height: 450px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        margin-bottom: -15%;
+    }
+    
+    .mockup-content-notification {
+        width: 80%;
+        height: 95%;
+        position: relative;
+        top: 40%;
+        margin-bottom: 25px;
+        left: 10%;
+    }
+    
+    .mockup-content-notification > img {
+        width: 85%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
 
 }
 
 /* Media queries para pantallas muy pequeñas */
-@media (max-width: 1367px) and (max-height: 768px) {
+@media (max-width: 1366px) and (max-height: 768px) {
     
 .mockup-container-notification {
     width: 25%;
-    height: 450px;
+    height: 350px;
     top: 10px;
     background: url('../../Mockup_Celular.png') no-repeat center center;
     background-size: contain;
@@ -93,18 +125,43 @@
 }
 
 .mockup-content-notification {
-    width: 82%;
-    height: 95%;
+    width: 80%;
+    height: 97%;
     position: relative;
-    top: 38.7%;
+    top: 40.7%;
 }
 
 .mockup-content-notification > img {
-    width: 85%;
+    width: 65%;
     height: 100%;
     position: absolute;
-    left: 61%;
     transform: translate(-50%, -40%);
 }
 }
 
+@media (max-width: 1800px) and (max-height: 650px) {
+    
+    .mockup-container-notification {
+        width: 25%;
+        height: 350px;
+        top: 10px;
+        background: url('../../Mockup_Celular.png') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        top: 1%;
+    }
+    
+    .mockup-content-notification {
+        width: 80%;
+        height: 97%;
+        position: relative;
+        top: 40.7%;
+    }
+    
+    .mockup-content-notification > img {
+        width: 65%;
+        height: 100%;
+        position: absolute;
+        transform: translate(-50%, -40%);
+    }
+    }

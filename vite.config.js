@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api.resend.com',
+        target: 'https://script.google.com/macros/s/AKfycbxztSR9XTCKYofzLQsGtaQvLN8JNIrkXJhzBOBoWHGiLDifaiKfT_blEhvaAKYn81akrg/exec',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
