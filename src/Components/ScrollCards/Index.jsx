@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import './scroll.css';
 import images from '../../imagenesMenu';
 import { useNavigate } from 'react-router-dom';
+import _ from 'lodash'; // Asegúrate de tener lodash instalado
 
 const sections = [
   { id: 1, title: 'TRADICIO<br />NALES', imageUrl: images.tradicionalAds, className: 'with-break', path: '/proyectorDigital/ver-formatos/tradicionales', subMenu: ['Banner Display', 'DCO', 'Native', 'Video Programático', 'Tik Tok', 'Youtube Video'] },
@@ -19,14 +20,22 @@ function SeccionFormatos() {
   const [hoveredSection, setHoveredSection] = useState(null);
   const navigate = useNavigate();
 
+  const throttledScroll = useCallback(
+    _.throttle((deltaY) => {
+      setCurrentSection((prevSection) => {
+        if (deltaY > 0) {
+          return (prevSection + 1) % sections.length;
+        } else if (deltaY < 0) {
+          return (prevSection - 1 + sections.length) % sections.length;
+        }
+        return prevSection;
+      });
+    }, 300), // Reducir el tiempo de throttle puede mejorar la respuesta
+    []
+  );
+
   const handleScroll = (event) => {
-    if (event.deltaY > 0) {
-      const newNextSection = (currentSection + 1) % sections.length;
-      setCurrentSection(newNextSection);
-    } else if (event.deltaY < 0) {
-      const newPreviousSection = (currentSection - 1 + sections.length) % sections.length;
-      setCurrentSection(newPreviousSection);
-    }
+    throttledScroll(event.deltaY);
   };
 
   const handleClick = (path) => {
@@ -34,13 +43,11 @@ function SeccionFormatos() {
   };
 
   const goToNextSection = () => {
-    const newNextSection = (currentSection + 1) % sections.length;
-    setCurrentSection(newNextSection);
+    throttledScroll(1);
   };
 
   const goToPreviousSection = () => {
-    const newPreviousSection = (currentSection - 1 + sections.length) % sections.length;
-    setCurrentSection(newPreviousSection);
+    throttledScroll(-1);
   };
 
   return (
@@ -69,7 +76,7 @@ function SeccionFormatos() {
             </h1>
             <div className='neon-card'>
               <img src={section.imageUrl} alt={section.title} className="section-image" />
-              <p>0{`${index + 1}/0${sections.length}`}</p>
+              <p>0{index + 1}<span className="small-text">/0{sections.length}</span></p>
             </div>
             {section.subMenu && hoveredSection === index && (
               <ul className="sub-menu">

@@ -83,6 +83,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: none;
+    height: 80px;
 }
 
 .label-nombre-apellido > div > p {
@@ -96,7 +97,7 @@
     padding: 10px;
     border-radius: 12px;
     width: 300px;
-    color: #ffff;
+    border-style: none;
 }
 
 /* Estilos del bloque pais */
@@ -105,6 +106,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: none;
+    height: 80px;
+
 }
 
 .label-pais > div > p {
@@ -119,6 +122,7 @@
     border-radius: 12px;
     width: 100%;
     color: #ffff;
+    border-style: none;
 }
 
 /* Estilos del mensaje del formulario */
@@ -127,6 +131,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: none;
+    
 }
 
 .label-mensaje > div > p {
@@ -143,20 +148,24 @@
     resize: none;
     height: 100px;
     color: #ffff;
+    border-style: none;
 }
 
 .input-mensaje:focus,
 .input-pais:focus,
-.inputs-formulario:focus{
-    outline-color: #913EF5;
+.inputs-formulario:focus {
+    color: white;
+    border: 2px solid #913EF5;
+    outline: none;
 }
+
 
 /* Estilos del boton del formulario */
 
 .boton-enviar {
     /* Estilos del bloque */
     border: 1px solid #913EF5;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 5px 50px;
     background: transparent;
     color: #ffff;
@@ -171,9 +180,9 @@
 }
 
 .boton-enviar:hover {
-    color: #BB86FC;
-    background-color: #ffffff;
     cursor: pointer;
+    background-color: #ffff;
+    color: #913EF5;
 }
 
 @media (min-width: 3800px) and (min-height: 2100px){
