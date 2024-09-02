@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../Tradicionales/tradicionales.css";
 import Aurora from "../Aurora/Index.jsx";
 import Header from "../Header/Index.jsx";
+import { NavLink } from "react-router-dom";
 
 // BANNER DISPLAY
 import desktopBannerAlimentos from "../../media/formatos/1-TRADICIONALES/1-BannersDisplay/DESKTOP/desktopBannerAlimentos.png";
@@ -91,7 +92,7 @@ const categoryMapping = {
 
 const formatsData = {
   format1: {
-    title: "BANNER DISPLAY",
+    title: "Banner Display",
     description:
       "Se le conoce generalmente como banner, y son una combinación de imágenes y texto. Puede contener una pequeña animación (gif).",
     filters: {
@@ -333,16 +334,34 @@ const Tradicionales = () => {
     <div className="tradicionales-container">
       <div className="header-tradicional-container">
         <div className="tradicional-header">
-            <h2>TRADICIONALES</h2>
-            <h3>{formatsData[selectedFormat].title}</h3>
-            <p>{formatsData[selectedFormat].description}</p>
+          <h2>TRADICIONALES</h2>
+          <h3>{formatsData[selectedFormat].title}</h3>
+          <p>{formatsData[selectedFormat].description}</p>
         </div>
       </div>
-
+  
       <Header />
       <Aurora />
-
+  
       <div className="grid-content">
+        <div className="return-div">
+          <span></span>
+          <NavLink to="/proyectorDigital/ver-formatos" className="return-box">
+            <a>VER FORMATOS</a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z"
+              />
+            </svg>
+          </NavLink>
+        </div>
+  
         <div className="device-options">
           {["desktop", "mobile"].map((device) => (
             <div
@@ -356,10 +375,11 @@ const Tradicionales = () => {
             </div>
           ))}
         </div>
-
+  
         <div className={`mockup-container ${selectedDevice} ${selectedFormat}`}>
           <div className={`mockup-content ${selectedDevice} ${selectedFormat}`}>
             <img
+              className="active"
               src={
                 formatsData[selectedFormat].filters[selectedDevice][
                   selectedCategory
@@ -369,7 +389,7 @@ const Tradicionales = () => {
             />
           </div>
         </div>
-
+  
         <div className="format-options">
           {Object.keys(formatsData).map((format) => (
             <div
@@ -383,8 +403,8 @@ const Tradicionales = () => {
             </div>
           ))}
         </div>
-
-        {selectedFormat !== "format5" && selectedFormat !== "format6" && ( 
+  
+        {selectedFormat !== "format5" && selectedFormat !== "format6" && (
           <div className="category-options">
             {Object.keys(categoryMapping).map((category) => (
               <div

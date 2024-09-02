@@ -96,7 +96,7 @@
     padding: 10px;
     border-radius: 12px;
     width: 300px;
-    color: #ffff;
+    border-style: none;
 }
 
 /* Estilos del bloque pais */
@@ -119,6 +119,7 @@
     border-radius: 12px;
     width: 100%;
     color: #ffff;
+    border-style: none;
 }
 
 /* Estilos del mensaje del formulario */
@@ -143,13 +144,17 @@
     resize: none;
     height: 100px;
     color: #ffff;
+    border-style: none;
 }
 
 .input-mensaje:focus,
 .input-pais:focus,
-.inputs-formulario:focus{
-    outline-color: #913EF5;
+.inputs-formulario:focus {
+    color: white;
+    border: 2px solid #913EF5;
+    outline: none;
 }
+
 
 /* Estilos del boton del formulario */
 
@@ -171,9 +176,11 @@
 }
 
 .boton-enviar:hover {
-    color: #BB86FC;
-    background-color: #ffffff;
     cursor: pointer;
+    border: 3px solid #913EF5;
+    border-radius: 12px;
+    font-size: 22px;
+    transition: 0.2s ease-in;
 }
 
 @media (min-width: 3800px) and (min-height: 2100px){

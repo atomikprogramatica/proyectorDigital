@@ -30,21 +30,22 @@
   
   @keyframes hue1 {
     0% {
-      filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg); /* Color original */
     }
     100% {
-      filter: hue-rotate(360deg);
+        filter: hue-rotate(60deg); /* Sólo rotación leve, sin pasar por verde */
     }
-  }
-  
-  @keyframes hue2 {
+}
+
+@keyframes hue2 {
     0% {
-      filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg); /* Color original */
     }
     100% {
-      filter: hue-rotate(360deg);
+        filter: hue-rotate(60deg); /* Sólo rotación leve, sin pasar por verde */
     }
-  }
+}
+
   
   @keyframes move1 {
     0% {
