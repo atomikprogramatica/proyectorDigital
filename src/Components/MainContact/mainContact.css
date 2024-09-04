@@ -57,7 +57,20 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-style: normal;
+    cursor: pointer;
 
+}
+
+.styles-popup{
+    transform: translateY(90%);
+    transition: transform 0.10s ease;
+    position: absolute;
+    cursor: auto;
+    color: #ffff;
+}
+
+.styles-popup:hover {
+    color: #ffff;
 }
 
 .contenedor-textos-inferior > p:nth-child(2):hover {

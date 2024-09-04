@@ -6,12 +6,13 @@ const MainContact = () => {
         titulo : 'Dejanos tus consultas, o escribinos por correo,',
         tituloVioleta : ' te estamos esperando!',
         subtitulo : 'Información de contacto',
-        emailTexto : 'info@atomik.pro',
+        emailTexto : 'growth@atomik.pro',
         nombreFormulario : 'Nombre',
         apellidoFormulario : 'Apellido',
         paisFormulario : 'País',
         mensajeFormulario : 'Dejanos tu mensaje:',
-        botonFormulario : 'Enviar'
+        botonFormulario : 'Enviar',
+        copyEmailOk: '¡E-mail copiado al portapapeles!'
     }
 
     const [formData, setFormData] = useState({
@@ -58,6 +59,23 @@ const MainContact = () => {
         }
     }
 
+    const [showPopup, setShowPopup] = useState(false);
+
+    const copyEmail = () => {
+        var aux = document.createElement("input");
+        aux.setAttribute("value", text.emailTexto);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+
+        setShowPopup(true);
+
+        setTimeout(() => {
+            setShowPopup(false);
+      }, 1500);
+    }
+
   return (
     <div className='main-contact-container'>
         <div className='contenedor-textos'>
@@ -66,7 +84,10 @@ const MainContact = () => {
             </p>
             <div className='contenedor-textos-inferior'>
                 <p>{text.subtitulo}</p>
-                <p>{text.emailTexto}</p>     
+                <p onClick={copyEmail}>
+                    {text.emailTexto}
+                    {showPopup && <p className='styles-popup'>{text.copyEmailOk}</p>}    
+                </p>     
             </div>
         </div>
         <form id='form' className='formulario' onSubmit={handleSubmit}>
