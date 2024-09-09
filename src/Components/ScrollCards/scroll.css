@@ -201,10 +201,12 @@
 
 .arrow.up {
     top: 10%;
+    rotate: 270deg;
 }
 
 .arrow.down {
     top: 75%;
+    rotate: 270deg;
   }
   
 .arrow:before, .arrow:after {
@@ -228,9 +230,15 @@
     left: 0;
   }
   
-.arrow:hover, .arrow:hover {
+.arrow.up:hover {
     opacity: 1;
+    transform: translateX(10px);
 } 
+
+.arrow.down:hover {
+    opacity: 1;
+    transform: translateX(-10px);
+}
 
 .arrow:active {
     visibility: hidden;

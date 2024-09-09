@@ -61,6 +61,8 @@ const Audio = () => {
                 selectedDevice === device ? "active" : ""
               }`}
             >
+              <span className="circulo"></span>{" "}
+              {}
               {device.charAt(0).toUpperCase() + device.slice(1)}
             </div>
           ))}

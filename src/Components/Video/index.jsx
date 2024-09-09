@@ -231,6 +231,8 @@ const Video = () => {
               }`}
             >
               {device.charAt(0).toUpperCase() + device.slice(1)}
+              <span className="circle"></span>{" "}
+              {}
             </div>
           ))}
         </div>
@@ -257,6 +259,8 @@ const Video = () => {
                 selectedFormat === format ? "active" : ""
               }`}
             >
+              <span className="circle"></span>{" "}
+              {}
               {formatsData[format].title}
             </div>
           ))}

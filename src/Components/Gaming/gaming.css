@@ -67,7 +67,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 70%;
     aspect-ratio: 16/9; /* Ejemplo de relación de aspecto (ajustar según necesidad) */
     background-size: contain; 
     position: relative;
@@ -115,3 +115,42 @@ body {
     margin-top: 2.5vh;
     margin-left: 0.5vh;
 }
+
+.format-options-gaming {
+    grid-area: format;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vh;
+    width: 35vh;
+    margin-bottom: 3vh;
+    margin-right: 7vh;
+}
+
+.circulo {
+    width: 1.1vh;
+    height: 1.1vh;
+    border-radius: 45%;
+    background-color: #ccc;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 3.2vh 0.5vh rgba(255, 255, 255, 0.3); 
+    margin-right: 2.5vh; 
+  }
+  
+  .device-option .circulo {
+    margin-left: 2.5vh; 
+  }
+  
+  .circulo:hover {
+    background-color: #fff;
+    transform: scale(1.5); 
+    box-shadow: 0 0 3.2vh 0.5vh rgba(255, 255, 255, 0.5); 
+  }
+  
+  .device-option.active .circulo {
+    background-color: #7d1ed5;
+    transform: scale(1.8);
+    box-shadow: 0 0 2vh 0.5vh rgba(125, 30, 213, 0.7); 
+  }
+  

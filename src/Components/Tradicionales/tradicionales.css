@@ -78,6 +78,7 @@ body {
     align-items: center;
     gap: 12vh;
     align-items:flex-end;
+    margin-left: 6vh;
 }
 
 .device-option:nth-child(1) {
@@ -103,7 +104,7 @@ body {
     width: 35vh;
     margin-bottom: 3vh;
     margin-right: 7vh;
-  }
+}
 
 .category-options {
     grid-area: category;
@@ -198,14 +199,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
-    aspect-ratio: 16/9; /* Ejemplo de relación de aspecto (ajustar según necesidad) */
+    width: 70%;
+    aspect-ratio: 16/9; 
     background-size: contain; 
     position: relative;
 }
 
 .mockup-content.mobile {
-    width: 25%; /* Ajusta en proporción al contenedor */
+    width: 25%; 
     height: 95%;
     position: absolute;
     overflow-y: scroll;
@@ -215,7 +216,7 @@ body {
 
 .mockup-content.mobile > img {
     width: 100%;
-    height: auto; /* Mantener proporciones automáticas */
+    height: auto; 
 }
 
 /* Desktop Styles */
@@ -224,15 +225,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    aspect-ratio: 16/9; /* Ejemplo de relación de aspecto (ajustar según necesidad) */
+    width: 55%;
+    aspect-ratio: 16/9;
     background: url('../../mockup_Desktop.png') no-repeat center center;
     background-size: contain; 
     position: relative;
 }
 
 .mockup-content.desktop {
-    width: 72%; /* Ajusta en proporción al contenedor */
+    width: 72%; 
     height: 80%;
     top: 3%;
     position: absolute;
@@ -244,14 +245,14 @@ body {
 
 .mockup-content.desktop > img {
     width: 100%;
-    height: auto; /* Mantener proporciones automáticas */
+    height: auto; 
 }
 
 .return-div {
     position: absolute;
-    top: 1vh; /* Ajusta el valor según lo necesites */
-    left: 15vh; /* Ajusta el valor según lo necesites */
-    z-index: 1; /* Asegura que esté por debajo de "header-tradicional-container" */
+    top: 1vh;
+    left: 15vh; 
+    z-index: 1;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -286,3 +287,37 @@ body {
   cursor: pointer;
 }
 
+.device-option .circle,
+.format-option .circle {
+  width: 1.1vh; 
+  height: 1.1vh;
+  border-radius: 45%;
+  background-color: #ccc; 
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 3.2vh 0.5vh rgba(255, 255, 255, 0.3); 
+}
+
+.device-option .circle {
+  margin-left: 2.5vh; 
+}
+
+.format-option .circle {
+  margin-right: 2.5vh; 
+}
+
+
+.device-option:hover .circle,
+.format-option:hover .circle {
+  background-color: #fff; 
+  transform: scale(1.5); 
+  box-shadow: 0 0 3.2vh 0.5vh rgba(255, 255, 255, 0.5); 
+}
+
+
+.device-option.active .circle,
+.format-option.active .circle {
+  background-color: #7d1ed5;
+  transform: scale(1.8); 
+  box-shadow: 0 0 2vh 0.5vh rgba(125, 30, 213, 0.7); 
+}

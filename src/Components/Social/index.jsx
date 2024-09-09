@@ -109,6 +109,7 @@ const Social = () => {
               }`}
             >
               {device.charAt(0).toUpperCase() + device.slice(1)}
+              <span className="circle"></span>{" "}
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Gaming/gaming.css"
+import "../Gaming/gaming.css";
 import Aurora from "../Aurora/Index.jsx";
 import Header from "../Header/Index.jsx";
 import { NavLink } from "react-router-dom";
@@ -70,10 +70,12 @@ const Gaming = () => {
     setSelectedFormat(format);
   };
 
-    return (
+  return (
     <div className="tradicionales-container-gaming">
       <div className="header-tradicional-container-gaming">
-        <div className={`tradicional-header-gaming ${selectedDevice} ${selectedFormat}`}>
+        <div
+          className={`tradicional-header-gaming ${selectedDevice} ${selectedFormat}`}
+        >
           <h2>GAMING</h2>
           <h3>{formatsData[selectedFormat].title}</h3>
           <p>{formatsData[selectedFormat].description}</p>
@@ -84,7 +86,7 @@ const Gaming = () => {
       <Aurora />
 
       <div className="grid-content">
-      <div className="return-div">
+        <div className="return-div">
           <span></span>
           <NavLink to="/proyectorDigital/ver-formatos" className="return-box">
             {" "}
@@ -105,16 +107,28 @@ const Gaming = () => {
         </div>
         <div className="device-options">
           <div
-            className={`device-option${
+            className={`device-option ${
               selectedDevice === "mobile" ? "active" : ""
             }`}
           >
             Mobile
+            <span className="circulo"></span>
+          </div>
+
+          <div
+            className={`device-option ${
+              selectedDevice === "desktop" ? "active" : ""
+            }`}
+          >
           </div>
         </div>
 
-        <div className={`mockup-container-gaming ${selectedDevice} ${selectedFormat}`}>
-          <div className={`mockup-content-gaming ${selectedDevice} ${selectedFormat}`}>
+        <div
+          className={`mockup-container-gaming ${selectedDevice} ${selectedFormat}`}
+        >
+          <div
+            className={`mockup-content-gaming ${selectedDevice} ${selectedFormat}`}
+          >
             <img
               src={formatsData[selectedFormat].filters.mobile.image}
               alt={`mobile ${selectedFormat}`}
@@ -131,7 +145,7 @@ const Gaming = () => {
                 selectedFormat === format ? "active" : ""
               }`}
             >
-              {formatsData[format].title}
+              <span className="circle"></span> {formatsData[format].title}
             </div>
           ))}
         </div>

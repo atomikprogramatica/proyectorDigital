@@ -48,9 +48,11 @@ const Notification = () => {
         <div className="device-options-notification">
           <div
             onClick={() => handleDeviceClick("mobile")}
-            className={`device-option-rm ${selectedDevice === "mobile" ? "active" : ""}`}
+            className={`device-option ${selectedDevice === "mobile" ? "active" : ""}`}
           >
             Mobile
+            <span className="redondel"></span>{" "}
+              {}
           </div>
         </div>
 

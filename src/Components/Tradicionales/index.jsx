@@ -53,32 +53,31 @@ import mobileNATBelleza from "../../media/formatos/1-TRADICIONALES/3-NATIVE/mobi
 import mobileNATTech from "../../media/formatos/1-TRADICIONALES/3-NATIVE/mobile/mobileNATTech.png";
 
 // VIDEO PROGRAMÁTICO
-import desktopVidAlimentos from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidAlimentos.gif"
-import desktopVidEducacion from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEducacion.gif"
-import desktopVidEntretenimiento from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEntretenimiento.gif"
-import desktopVidFinanzas from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidFinanzas.gif"
-import desktopVidEcommerce from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEcommerce.gif"
-import desktopVidBelleza from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidBelleza.gif"
-import desktopVidTech from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidTech.gif"
+import desktopVidAlimentos from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidAlimentos.gif";
+import desktopVidEducacion from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEducacion.gif";
+import desktopVidEntretenimiento from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEntretenimiento.gif";
+import desktopVidFinanzas from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidFinanzas.gif";
+import desktopVidEcommerce from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidEcommerce.gif";
+import desktopVidBelleza from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidBelleza.gif";
+import desktopVidTech from "../../media/formatos/1-TRADICIONALES/4-VideoPro/DESKTOP/desktopVidTech.gif";
 
-import mobileVidAlimentos from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidAlimentos.gif"
-import mobileVidEducacion from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEducacion.gif"
-import mobileVidEntretenimiento from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEntretenimiento.gif"
-import mobileVidFinanzas from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidFinanzas.gif"
-import mobileVidEcommerce from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEcommerce.gif"
-import mobileVidBelleza from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidBelleza.gif"
-import mobileVidTech from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidTech.gif"
+import mobileVidAlimentos from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidAlimentos.gif";
+import mobileVidEducacion from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEducacion.gif";
+import mobileVidEntretenimiento from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEntretenimiento.gif";
+import mobileVidFinanzas from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidFinanzas.gif";
+import mobileVidEcommerce from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidEcommerce.gif";
+import mobileVidBelleza from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidBelleza.gif";
+import mobileVidTech from "../../media/formatos/1-TRADICIONALES/4-VideoPro/MOBILE/mobileVidTech.gif";
 
 // TIK TOK
 
-import desktopTiktok from "../../media/formatos/1-TRADICIONALES/5-TikTok/DESKTOP/desktopTiktok.gif"
-import mobileTiktok from "../../media/formatos/1-TRADICIONALES/5-TikTok/MOBILE/mobileTiktok.gif"
+import desktopTiktok from "../../media/formatos/1-TRADICIONALES/5-TikTok/DESKTOP/desktopTiktok.gif";
+import mobileTiktok from "../../media/formatos/1-TRADICIONALES/5-TikTok/MOBILE/mobileTiktok.gif";
 
 // YOUTUBE
 
-import desktopYoutube from "../../media/formatos/1-TRADICIONALES/6-YT/desktop/desktopYoutube.gif"
-import mobileYoutube from "../../media/formatos/1-TRADICIONALES/6-YT/mobile/mobileYoutube.gif"
-
+import desktopYoutube from "../../media/formatos/1-TRADICIONALES/6-YT/desktop/desktopYoutube.gif";
+import mobileYoutube from "../../media/formatos/1-TRADICIONALES/6-YT/mobile/mobileYoutube.gif";
 
 const categoryMapping = {
   alimentos_bebidas: "Alimentos & Bebidas",
@@ -122,36 +121,22 @@ const formatsData = {
       "Personaliza tu mensaje de acuerdo a variables determinadas (características del usuario, clima, momento del día, etapa del funnel que atraviesa el usuario) para comunicarte mejor con el usuario.",
     filters: {
       desktop: {
-        alimentos_bebidas:
-          desktopDCOAlimentos,
-        retail_ecommerce:
-          desktopDCOEcommerce,
-        educacion:
-          desktopDCOEducacion,
-        finanzas:
-          desktopDCOFinanzas,
-        salud_belleza:
-          desktopDCOBelleza,
-        entretenimiento:
-          desktopDCOEntretenimiento,
-        tech_telco:
-          desktopDCOTech,
+        alimentos_bebidas: desktopDCOAlimentos,
+        retail_ecommerce: desktopDCOEcommerce,
+        educacion: desktopDCOEducacion,
+        finanzas: desktopDCOFinanzas,
+        salud_belleza: desktopDCOBelleza,
+        entretenimiento: desktopDCOEntretenimiento,
+        tech_telco: desktopDCOTech,
       },
       mobile: {
-        alimentos_bebidas:
-          mobileDCOAlimentos,
-        retail_ecommerce:
-          mobileDCOEcommerce,
-        educacion:
-          mobileDCOEducacion,
-        finanzas:
-          mobileDCOFinanzas,
-        salud_belleza:
-          mobileDCOBelleza,
-        entretenimiento:
-          mobileDCOEntretenimiento,
-        tech_telco:
-        mobileDCOTech,
+        alimentos_bebidas: mobileDCOAlimentos,
+        retail_ecommerce: mobileDCOEcommerce,
+        educacion: mobileDCOEducacion,
+        finanzas: mobileDCOFinanzas,
+        salud_belleza: mobileDCOBelleza,
+        entretenimiento: mobileDCOEntretenimiento,
+        tech_telco: mobileDCOTech,
       },
     },
   },
@@ -161,36 +146,22 @@ const formatsData = {
       "Se adapta al entorno de la web donde impacta como si fuera parte del contenido editorial, permitiéndole a los anunciantes alcanzar a los usuarios sin ser intrusivos.",
     filters: {
       desktop: {
-        alimentos_bebidas:
-          desktopNATAlimentos,
-        retail_ecommerce:
-          desktopNATEcommerce,
-        educacion:
-          desktopNATEducacion,
-        finanzas:
-          desktopNATFinanzas,
-        salud_belleza:
-          desktopNATBelleza,
-        entretenimiento:
-          desktopNATEntretenimiento,
-        tech_telco:
-          desktopNATTech,
+        alimentos_bebidas: desktopNATAlimentos,
+        retail_ecommerce: desktopNATEcommerce,
+        educacion: desktopNATEducacion,
+        finanzas: desktopNATFinanzas,
+        salud_belleza: desktopNATBelleza,
+        entretenimiento: desktopNATEntretenimiento,
+        tech_telco: desktopNATTech,
       },
       mobile: {
-        alimentos_bebidas:
-          mobileNATAlimentos,
-        retail_ecommerce:
-          mobileNATEcommerce,
-        educacion:
-          mobileNATEducacion,
-        finanzas:
-          mobileNATFinanzas,
-        salud_belleza:
-          mobileNATBelleza,
-        entretenimiento:
-          mobileNATEntretenimiento,
-        tech_telco:
-          mobileNATTech,
+        alimentos_bebidas: mobileNATAlimentos,
+        retail_ecommerce: mobileNATEcommerce,
+        educacion: mobileNATEducacion,
+        finanzas: mobileNATFinanzas,
+        salud_belleza: mobileNATBelleza,
+        entretenimiento: mobileNATEntretenimiento,
+        tech_telco: mobileNATTech,
       },
     },
   },
@@ -200,36 +171,22 @@ const formatsData = {
       "Anuncio de video que corre antes, durante o después de stremear (reproducir) el contenido que el usuario solicitó. Corre en un reproductor o player de video. Por default todos comienzan con el sonido activado.",
     filters: {
       desktop: {
-        alimentos_bebidas:
-          desktopVidAlimentos,
-        retail_ecommerce:
-          desktopVidEcommerce,
-        educacion:
-          desktopVidEducacion,
-        finanzas:
-          desktopVidFinanzas,
-        salud_belleza:
-          desktopVidBelleza,
-        entretenimiento:
-          desktopVidEntretenimiento,
-        tech_telco:
-          desktopVidTech,
+        alimentos_bebidas: desktopVidAlimentos,
+        retail_ecommerce: desktopVidEcommerce,
+        educacion: desktopVidEducacion,
+        finanzas: desktopVidFinanzas,
+        salud_belleza: desktopVidBelleza,
+        entretenimiento: desktopVidEntretenimiento,
+        tech_telco: desktopVidTech,
       },
       mobile: {
-        alimentos_bebidas:
-          mobileVidAlimentos,
-        retail_ecommerce:
-          mobileVidEcommerce,
-        educacion:
-          mobileVidEducacion,
-        finanzas:
-          mobileVidFinanzas,
-        salud_belleza:
-          mobileVidBelleza,
-        entretenimiento:
-          mobileVidEntretenimiento,
-        tech_telco:
-          mobileVidTech,
+        alimentos_bebidas: mobileVidAlimentos,
+        retail_ecommerce: mobileVidEcommerce,
+        educacion: mobileVidEducacion,
+        finanzas: mobileVidFinanzas,
+        salud_belleza: mobileVidBelleza,
+        entretenimiento: mobileVidEntretenimiento,
+        tech_telco: mobileVidTech,
       },
     },
   },
@@ -239,36 +196,22 @@ const formatsData = {
       "El anuncio es un video in feed, y funciona como cualquier publicación (posibilidad de like, comentario, difusión).",
     filters: {
       desktop: {
-        alimentos_bebidas:
-          desktopTiktok,
-        retail_ecommerce:
-          desktopTiktok,
-        educacion:
-          desktopTiktok,
-        finanzas:
-          desktopTiktok,
-        salud_belleza:
-          desktopTiktok,
-        entretenimiento:
-          desktopTiktok,
-        tech_telco:
-          desktopTiktok,
+        alimentos_bebidas: desktopTiktok,
+        retail_ecommerce: desktopTiktok,
+        educacion: desktopTiktok,
+        finanzas: desktopTiktok,
+        salud_belleza: desktopTiktok,
+        entretenimiento: desktopTiktok,
+        tech_telco: desktopTiktok,
       },
       mobile: {
-        alimentos_bebidas:
-          mobileTiktok,
-        retail_ecommerce:
-          mobileTiktok,
-        educacion:
-          mobileTiktok,
-        finanzas:
-          mobileTiktok,
-        salud_belleza:
-          mobileTiktok,
-        entretenimiento:
-          mobileTiktok,
-        tech_telco:
-          mobileTiktok,
+        alimentos_bebidas: mobileTiktok,
+        retail_ecommerce: mobileTiktok,
+        educacion: mobileTiktok,
+        finanzas: mobileTiktok,
+        salud_belleza: mobileTiktok,
+        entretenimiento: mobileTiktok,
+        tech_telco: mobileTiktok,
       },
     },
   },
@@ -278,37 +221,23 @@ const formatsData = {
       "Brindan una oportunidad a los usuarios de mirar un video o interactuar con un anuncio reproducible a cambio de una recompensa dentro de una aplicación (una nueva vida, pasar de nivel).",
     filters: {
       desktop: {
-      alimentos_bebidas:
-        desktopYoutube,
-      retail_ecommerce:
-        desktopYoutube,
-      educacion:
-        desktopYoutube,
-      finanzas:
-        desktopYoutube,
-      salud_belleza:
-        desktopYoutube,
-      entretenimiento:
-        desktopYoutube,
-      tech_telco:
-        desktopYoutube,
-    },
-    mobile: {
-      alimentos_bebidas:
-        mobileYoutube,
-      retail_ecommerce:
-        mobileYoutube,
-      educacion:
-        mobileYoutube,
-      finanzas:
-        mobileYoutube,
-      salud_belleza:
-        mobileYoutube,
-      entretenimiento:
-        mobileYoutube,
-      tech_telco:
-        mobileYoutube,
-    },
+        alimentos_bebidas: desktopYoutube,
+        retail_ecommerce: desktopYoutube,
+        educacion: desktopYoutube,
+        finanzas: desktopYoutube,
+        salud_belleza: desktopYoutube,
+        entretenimiento: desktopYoutube,
+        tech_telco: desktopYoutube,
+      },
+      mobile: {
+        alimentos_bebidas: mobileYoutube,
+        retail_ecommerce: mobileYoutube,
+        educacion: mobileYoutube,
+        finanzas: mobileYoutube,
+        salud_belleza: mobileYoutube,
+        entretenimiento: mobileYoutube,
+        tech_telco: mobileYoutube,
+      },
     },
   },
 };
@@ -339,10 +268,10 @@ const Tradicionales = () => {
           <p>{formatsData[selectedFormat].description}</p>
         </div>
       </div>
-  
+
       <Header />
       <Aurora />
-  
+
       <div className="grid-content">
         <div className="return-div">
           <span></span>
@@ -361,7 +290,7 @@ const Tradicionales = () => {
             </svg>
           </NavLink>
         </div>
-  
+
         <div className="device-options">
           {["desktop", "mobile"].map((device) => (
             <div
@@ -372,10 +301,12 @@ const Tradicionales = () => {
               }`}
             >
               {device.charAt(0).toUpperCase() + device.slice(1)}
+              <span className="circle"></span>{" "}
+              {}
             </div>
           ))}
         </div>
-  
+
         <div className={`mockup-container ${selectedDevice} ${selectedFormat}`}>
           <div className={`mockup-content ${selectedDevice} ${selectedFormat}`}>
             <img
@@ -389,7 +320,7 @@ const Tradicionales = () => {
             />
           </div>
         </div>
-  
+
         <div className="format-options">
           {Object.keys(formatsData).map((format) => (
             <div
@@ -399,11 +330,13 @@ const Tradicionales = () => {
                 selectedFormat === format ? "active" : ""
               }`}
             >
+              <span className="circle"></span>{" "}
+              {}
               {formatsData[format].title}
             </div>
           ))}
         </div>
-  
+
         {selectedFormat !== "format5" && selectedFormat !== "format6" && (
           <div className="category-options">
             {Object.keys(categoryMapping).map((category) => (

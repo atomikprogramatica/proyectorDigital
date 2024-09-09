@@ -44,6 +44,18 @@ const TV = () => {
             </svg>
           </NavLink>
       </div>
+
+      <div className="device-options-notification">
+          <div
+            onClick={() => handleDeviceClick("mobile")}
+            className={`device-option ${selectedDevice === "mobile" ? "active" : ""}`}
+          >
+            TV
+            <span className="redondel"></span>{" "}
+              {}
+          </div>
+        </div>
+
         <div className={`mockup-container-ctv`}>
           <div className={`mockup-content-ctv`}>
             <img

@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 70%;
     aspect-ratio: 16/9; /* Ejemplo de relación de aspecto (ajustar según necesidad) */
     background-size: contain; 
     position: relative;
@@ -96,3 +96,16 @@
     top: 10vh; /* Ajusta el valor según lo necesites */
     left: -45vh; /* Ajusta el valor según lo necesites */
 }
+
+.redondel {
+    width: 1.1vh;
+    height: 1.1vh;
+    border-radius: 45%;
+    background-color: #ccc;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 3.2vh 0.5vh rgba(255, 255, 255, 0.3); 
+    position: relative;
+    right: -2.7vh;
+  }
+  
