@@ -7,7 +7,7 @@ const Main = () => {
       <div className="main-box">
         <div className="box-content">
           <h1>PROYECTOR DIGITAL</h1>
-          <h3>Mostrando los Formatos en Escena</h3>
+          <h3>¡Mostrando nuestros formatos en acción!</h3>
           <div className="acces-box">
             <span></span>
             <NavLink

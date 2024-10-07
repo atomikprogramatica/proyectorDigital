@@ -57,19 +57,18 @@ body {
 
 .grid-content {
     display: grid;
-    grid-template-columns: 1.2fr 3.5fr 1.2fr; /* Tres columnas: izquierda, centro, derecha */
-    grid-template-rows: 1fr 0.5fr; /* Dos filas: la primera para las opciones y el mockup, la segunda para las categorías */
+    grid-template-columns: 1fr 3.0fr 0.2fr 1fr; /* 4 columnas: device, scroll, mockup, format */
+    grid-template-rows: 1fr 0.5fr; /* Dos filas */
     grid-template-areas: 
-
-      "device mockup format"
-      "category category category"; /* La segunda fila ocupa el ancho completo para category-options */
+      "device mockup stroll format"
+      "category category category category"; /* Fila completa para category-options */
     align-items: center;
     justify-items: center;
     padding: 5px;
     width: 100%;
     height: 100vh;
     position: relative;
-}
+  }
 
 .device-options {
     grid-area: device;
@@ -93,6 +92,11 @@ body {
 .mockup-container {
     grid-area: mockup;
     display: flex;
+}
+
+.scroll-indicator {
+    grid-area: stroll;
+    margin-left: -45vh;
 }
   
 .format-options {
@@ -321,3 +325,22 @@ body {
   transform: scale(1.8); 
   box-shadow: 0 0 2vh 0.5vh rgba(125, 30, 213, 0.7); 
 }
+
+
+.scroll-indicator {
+    display: flex;
+    bottom: 10vh;
+    right: 10vh;
+    transform: translateX(-50%);
+    animation: bounce 1.5s infinite; /* Añade una pequeña animación de rebote */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(-30%) translateY(0);
+    }
+    50% {
+      transform: translateX(-30%) translateY(-10px);
+    }
+  }
+  

@@ -63,7 +63,6 @@
     width: 25%; /* Ajusta en proporción al contenedor */
     height: 95%;
     position: absolute;
-    overflow-y: scroll;
     display: flex;
     align-items: start;
 }
